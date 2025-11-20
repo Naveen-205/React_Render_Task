@@ -1,5 +1,4 @@
-import Banner from '../assets/images/banner.jpeg';
-
+import { Link } from "react-router-dom"
 
 const Navbar = () => {
 
@@ -9,12 +8,22 @@ const Navbar = () => {
 
     return (
         <>
-        <div style={{background:"red",padding:"15px",textAlign:"center",color:"white"}}>
-            <h1>{MovieName} {Year}</h1>
-        </div>
-        <div>
-            <img style={{width:"100%"}} src={Banner} alt="banner-img"/>
-        </div>
+
+            <div className='navbar'>
+                <div className='navtitle'>
+                    <h1>{MovieName} {Year}</h1>
+                </div>
+                <div className="navlink">
+                    <Link className="navlinksec" to="/">Home</Link>
+                    <Link className="navlinksec" to="/about">About</Link>
+                    <Link className="navlinksec" to="/characters">Characters</Link>
+                    <Link className="navlinksec" to="/multiplay">Multiplay</Link>
+                </div>
+
+            </div>
+
+
+
         </>
     )
 }
