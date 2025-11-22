@@ -18,6 +18,7 @@ const Navbar = () => {
                     <Link className="navlinksec" to="/about">About</Link>
                     <Link className="navlinksec" to="/characters">Characters</Link>
                     <Link className="navlinksec" to="/multiplay">Multiplay</Link>
+                    <Link className="navlinksec" to="/state">State</Link>
                 </div>
 
             </div>
