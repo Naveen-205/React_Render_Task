@@ -29,7 +29,8 @@ const App = () => {
           <Route path='/state' element={<State />} />
         </Routes>
 
-        {/* <Footer /> */}
+        <Footer />
+        
       </div>
     </>
   )
